@@ -8,7 +8,7 @@ function List({ selectTag, filterValue, setFilterValue }) {
     const date = Date.now().toString(36)
     selectTag(<p className="flex gap-3 items-center font-bold bg-[hsl(180,52%,96%)] p-2 text-[hsl(180,29%,50%)]" key={random + date}>
       {e.target.textContent}
-      <img src="../src/assets/images/icon-remove.svg"
+      <img src="../assets/images/icon-remove.svg"
         className="bg-[hsl(180,29%,50%)] p-2 hover:bg-black" />
     </p>);
     //New Value from filter
