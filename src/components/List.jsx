@@ -9,7 +9,7 @@ function List({ selectTag, filterValue, setFilterValue }) {
     selectTag(<p className="flex gap-3 items-center font-bold bg-[hsl(180,52%,96%)] p-2 text-[hsl(180,29%,50%)]" key={random + date}>
       {e.target.textContent}
       <img src="../assets/images/icon-remove.svg"
-        className="bg-[hsl(180,29%,50%)] p-2 hover:bg-black" />
+        className="bg-[hsl(180,29%,50%)] p-2 hover:bg-black" alt='icon-close' />
     </p>);
     //New Value from filter
     setFilterValue(e.target.textContent);
@@ -28,7 +28,7 @@ function List({ selectTag, filterValue, setFilterValue }) {
       {filteredData.map(job =>
         <div className="bg-white h-fit w-80 m-10 rounded-md p-5 lg:mt-0 lg:w-5/6 lg:flex lg:justify-between items-center" key={job.id}>
 
-          <img src={job.logo} className='-mt-11 w-16 lg:m-0 lg:w-24 lg:mr-5' />
+          <img src={job.logo} className='-mt-11 w-16 lg:m-0 lg:w-24 lg:mr-5' alt='logo'/>
           <div className='lg:mr-auto'>
             <p className='text-[hsl(180,29%,50%)] font-bold mt-2'>{job.company}</p>
             <p className='font-bold mt-2'>{job.position}</p>
